@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Music Player</string>
+    <string name="start_screen_radio_button">Radio</string>
+    <string name="start_screen_music_button">Music</string>
+    <string name="title_activity_album_music">AlbumMusicActivity</string>
+    <string name="music_screen_album_button">Albums</string>
+    <string name="music_screen_artist_button">Artists</string>
+    <string name="music_screen_song_button">Songs</string>
+    <string name="music_screen_shuffle_button">Shuffle</string>
+</resources>

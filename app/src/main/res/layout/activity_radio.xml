@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicplayer.RadioActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:foreground="@drawable/foreground_selector"
+        android:stateListAnimator="@drawable/test_selector">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/album" />
+
+        <TextView
+            style="@style/MusicScreenButtons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/music_screen_album_button"
+            android:textColor="@android:color/white" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:stateListAnimator="@drawable/menu_button_state_animator">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/artist" />
+
+        <TextView
+            style="@style/MusicScreenButtons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/music_screen_artist_button"
+            android:textColor="@android:color/white" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:stateListAnimator="@drawable/menu_button_state_animator">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/song_button" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/MusicScreenButtons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/music_screen_song_button"
+            android:textColor="@android:color/white" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:stateListAnimator="@drawable/menu_button_state_animator">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/shuffle" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/MusicScreenButtons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/music_screen_shuffle_button"
+            android:textColor="@android:color/white" />
+
+    </FrameLayout>
+
+
+</LinearLayout>
