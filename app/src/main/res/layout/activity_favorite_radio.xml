@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.musicplayer.FavoriteRadioActivity">
+    tools:context="com.example.android.musicplayer.AlbumMusicActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Activity contains a list of user favorite radio stations.
+These stations will be provided with a rest api, like Dirble
+or ShoutCast. If this api doesn't support login, then we will
+ use local storage or setup our own server for storing user
+ preferences." />
+
+</LinearLayout>

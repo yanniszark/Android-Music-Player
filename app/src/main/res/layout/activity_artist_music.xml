@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.musicplayer.ArtistMusicActivity">
+    tools:context="com.example.android.musicplayer.AlbumMusicActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Activity contains user music sorted by artist.
+First time on this screen, if there is no local music directory
+defined from previous use, an explorer will be opened with an
+intent in order to select files/directories. After that, the
+selected directories will be scanned and their metadata will
+be stored locally by the application. Using this metadata they
+will be grouped by artist and then each artist will be placed
+as an element of a gridview."/>
+</LinearLayout>

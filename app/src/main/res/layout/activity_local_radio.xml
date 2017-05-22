@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.musicplayer.LocalRadioActivity">
+    tools:context="com.example.android.musicplayer.AlbumMusicActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Activity contains a list of local radio stations.
+        Using LocationManager we will get a single update on
+        location and show radio stations in the specific country.
+These stations will be provided with a rest api, like Dirble
+or ShoutCast." />
+
+</LinearLayout>

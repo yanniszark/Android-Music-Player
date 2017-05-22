@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:clickable="true"
+        android:onClick="showByAlbum"
         android:stateListAnimator="@drawable/menu_button_state_animator">
 
         <ImageView
@@ -34,7 +34,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:clickable="true"
+        android:onClick="showByArtist"
         android:stateListAnimator="@drawable/menu_button_state_animator">
 
         <ImageView
@@ -56,14 +56,14 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:clickable="true"
+        android:onClick="showBySong"
         android:stateListAnimator="@drawable/menu_button_state_animator">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/song_button" />
+            android:src="@drawable/song" />
 
         <TextView
             android:id="@+id/textView"
@@ -79,7 +79,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:clickable="true"
+        android:onClick="beginShufflePlay"
         android:stateListAnimator="@drawable/menu_button_state_animator">
 
         <ImageView
@@ -92,7 +92,7 @@
             style="@style/MusicScreenButtons"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/music_screen_shuffle_button"
+            android:text="@string/music_screen_playing_now_button"
             android:textColor="@android:color/white" />
 
     </FrameLayout>

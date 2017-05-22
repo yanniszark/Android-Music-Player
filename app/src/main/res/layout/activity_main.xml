@@ -8,29 +8,50 @@
     android:background="@android:color/black"
     tools:context="com.example.android.musicplayer.MainActivity">
 
-    <Button
-        android:id="@+id/music_select_button"
-        style="@style/StartScreenButtons"
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@drawable/my_music_blurred"
         android:onClick="selectMusic"
-        android:padding="0dp"
-        android:scaleType="centerCrop"
-        android:text="@string/start_screen_music_button"
-        android:stateListAnimator="@drawable/menu_button_state_animator"/>
+        android:stateListAnimator="@drawable/menu_button_state_animator">
 
-    <Button
-        android:id="@+id/radio_select_button"
-        style="@style/StartScreenButtons"
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/my_music" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/MusicScreenButtons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/start_screen_music_button"
+            android:textColor="@android:color/white" />
+
+    </FrameLayout>
+
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@drawable/radio_blurred"
+        android:clickable="true"
         android:onClick="selectRadio"
-        android:padding="0dp"
-        android:scaleType="centerCrop"
-        android:text="@string/start_screen_radio_button"
-        android:stateListAnimator="@drawable/menu_button_state_animator"/>
+        android:stateListAnimator="@drawable/menu_button_state_animator">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/radio" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/MusicScreenButtons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/start_screen_radio_button"
+            android:textColor="@android:color/white" />
+
+    </FrameLayout>
 </LinearLayout>

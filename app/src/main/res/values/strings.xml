@@ -6,5 +6,9 @@
     <string name="music_screen_album_button">Albums</string>
     <string name="music_screen_artist_button">Artists</string>
     <string name="music_screen_song_button">Songs</string>
-    <string name="music_screen_shuffle_button">Shuffle</string>
+    <string name="music_screen_playing_now_button">Playing Now</string>
+    <string name="radio_screen_trending_button">Trending</string>
+    <string name="radio_screen_global_button">Global</string>
+    <string name="radio_screen_local_button">Local</string>
+    <string name="radio_screen_favorites_button">Favorites</string>
 </resources>

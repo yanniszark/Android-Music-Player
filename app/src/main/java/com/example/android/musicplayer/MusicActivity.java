@@ -41,11 +41,11 @@ public class MusicActivity extends AppCompatActivity {
     }
 
     /**
-     * Begin shuffle play
+     * Show playing now screen
      * @param view
      */
     public void beginShufflePlay(View view){
-        Intent i = new Intent(this, ShufflePlayActivity.class);
+        Intent i = new Intent(this, PlayingNowMusicActivity.class);
         startActivity(i);
     }
 }

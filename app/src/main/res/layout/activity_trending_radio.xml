@@ -4,6 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.musicplayer.TrendingRadioActivity">
+    tools:context="com.example.android.musicplayer.AlbumMusicActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Activity contains a list of trending/popular radio stations.
+These stations will be provided with a rest api, like Dirble
+or ShoutCast. These will provide a url for streaming as well
+as metadata for the stations. The metadata will be used to
+populate a listview or a gridview." />
 
 </LinearLayout>

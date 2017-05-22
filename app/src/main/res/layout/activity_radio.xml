@@ -12,21 +12,21 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:clickable="true"
-        android:foreground="@drawable/foreground_selector"
-        android:stateListAnimator="@drawable/test_selector">
+        android:onClick="showTrendingStations"
+        android:stateListAnimator="@drawable/menu_button_state_animator">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/album" />
+            android:src="@drawable/trending_button" />
 
         <TextView
+            android:id="@+id/textView3"
             style="@style/MusicScreenButtons"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/music_screen_album_button"
+            android:text="@string/radio_screen_trending_button"
             android:textColor="@android:color/white" />
 
     </FrameLayout>
@@ -35,20 +35,20 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:clickable="true"
+        android:onClick="showGlobalStations"
         android:stateListAnimator="@drawable/menu_button_state_animator">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/artist" />
+            android:src="@drawable/global_button" />
 
         <TextView
             style="@style/MusicScreenButtons"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/music_screen_artist_button"
+            android:text="@string/radio_screen_global_button"
             android:textColor="@android:color/white" />
 
     </FrameLayout>
@@ -57,21 +57,21 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:clickable="true"
+        android:onClick="showLocalStations"
         android:stateListAnimator="@drawable/menu_button_state_animator">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/song_button" />
+            android:src="@drawable/local_button" />
 
         <TextView
             android:id="@+id/textView"
             style="@style/MusicScreenButtons"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/music_screen_song_button"
+            android:text="@string/radio_screen_local_button"
             android:textColor="@android:color/white" />
 
     </FrameLayout>
@@ -80,21 +80,21 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:clickable="true"
+        android:onClick="showFavoriteStations"
         android:stateListAnimator="@drawable/menu_button_state_animator">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/shuffle" />
+            android:src="@drawable/favorites_button" />
 
         <TextView
             android:id="@+id/textView2"
             style="@style/MusicScreenButtons"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/music_screen_shuffle_button"
+            android:text="@string/radio_screen_favorites_button"
             android:textColor="@android:color/white" />
 
     </FrameLayout>

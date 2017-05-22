@@ -11,31 +11,26 @@
         <item name="android:statusBarColor">@android:color/background_dark</item>
     </style>
 
-    <style name="StartScreenButtons">
-        <item name="android:layout_gravity">center</item>
-        <item name="android:fontFamily">cursive</item>
-        <item name="android:textSize">60dp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@android:color/white</item>
-        <item name="android:textAllCaps">false</item>
-    </style>
-
-    <style name="MusicScreenButtons">
+    <style name="MenuScreenButtons">
         <item name="android:gravity">center</item>
         <item name="android:fontFamily">cursive</item>
-        <item name="android:textSize">48dp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textAllCaps">false</item>
+        <item name="android:shadowColor">@color/transparent_gray</item>
+        <item name="android:shadowRadius">6</item>
     </style>
 
-    <style name="RadioScreenButtons">
-        <item name="android:layout_gravity">center</item>
-        <item name="android:fontFamily">cursive</item>
+    <style name="StartScreenButtons" parent="MenuScreenButtons">
         <item name="android:textSize">60dp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@android:color/white</item>
-        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="MusicScreenButtons" parent="MenuScreenButtons">
+        <item name="android:textSize">48dp</item>
+    </style>
+
+    <style name="RadioScreenButtons" parent="MenuScreenButtons">
+        <item name="android:textSize">48dp</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
