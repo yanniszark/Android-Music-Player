@@ -4,48 +4,60 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.FrameLayout;
 
 public class MusicActivity extends AppCompatActivity {
+
+    FrameLayout albums;
+    FrameLayout artists;
+    FrameLayout songs;
+    FrameLayout playingNow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_music);
+
+        /* Setup Albums button */
+        albums = (FrameLayout) findViewById(R.id.albums);
+        albums.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MusicActivity.this, AlbumMusicActivity.class);
+                startActivity(i);
+            }
+        });
+
+        /* Setup Artists button */
+        artists = (FrameLayout) findViewById(R.id.artists);
+        artists.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MusicActivity.this, ArtistMusicActivity.class);
+                startActivity(i);
+            }
+        });
+
+        /* Setup Songs button */
+        songs = (FrameLayout) findViewById(R.id.songs);
+        songs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MusicActivity.this, SongMusicActivity.class);
+                startActivity(i);
+            }
+        });
+
+        /* Setup PlayingNow button */
+        playingNow = (FrameLayout) findViewById(R.id.playing_now);
+        playingNow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MusicActivity.this, PlayingNowMusicActivity.class);
+                startActivity(i);
+            }
+        });
     }
 
-    /**
-     * Show music arranged by album
-     * @param view
-     */
-    public void showByAlbum(View view){
-        Intent i = new Intent(this, AlbumMusicActivity.class);
-        startActivity(i);
-    }
 
-    /**
-     * Show music arranged by artist
-     * @param view
-     */
-    public void showByArtist(View view){
-        Intent i = new Intent(this, ArtistMusicActivity.class);
-        startActivity(i);
-    }
-
-    /**
-     * Show music arranged by song
-     * @param view
-     */
-    public void showBySong(View view){
-        Intent i = new Intent(this, SongMusicActivity.class);
-        startActivity(i);
-    }
-
-    /**
-     * Show playing now screen
-     * @param view
-     */
-    public void beginShufflePlay(View view){
-        Intent i = new Intent(this, PlayingNowMusicActivity.class);
-        startActivity(i);
-    }
 }

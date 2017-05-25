@@ -9,10 +9,10 @@
     tools:context="com.example.android.musicplayer.RadioActivity">
 
     <FrameLayout
+        android:id="@+id/albums"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:onClick="showByAlbum"
         android:stateListAnimator="@drawable/menu_button_state_animator">
 
         <ImageView
@@ -31,10 +31,10 @@
     </FrameLayout>
 
     <FrameLayout
+        android:id="@+id/artists"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:onClick="showByArtist"
         android:stateListAnimator="@drawable/menu_button_state_animator">
 
         <ImageView
@@ -53,10 +53,10 @@
     </FrameLayout>
 
     <FrameLayout
+        android:id="@+id/songs"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:onClick="showBySong"
         android:stateListAnimator="@drawable/menu_button_state_animator">
 
         <ImageView
@@ -76,10 +76,10 @@
     </FrameLayout>
 
     <FrameLayout
+        android:id="@+id/playing_now"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:onClick="beginShufflePlay"
         android:stateListAnimator="@drawable/menu_button_state_animator">
 
         <ImageView

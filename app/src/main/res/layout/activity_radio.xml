@@ -9,10 +9,10 @@
     tools:context="com.example.android.musicplayer.RadioActivity">
 
     <FrameLayout
+        android:id="@+id/trending"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:onClick="showTrendingStations"
         android:stateListAnimator="@drawable/menu_button_state_animator">
 
         <ImageView
@@ -32,10 +32,10 @@
     </FrameLayout>
 
     <FrameLayout
+        android:id="@+id/global"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:onClick="showGlobalStations"
         android:stateListAnimator="@drawable/menu_button_state_animator">
 
         <ImageView
@@ -54,10 +54,10 @@
     </FrameLayout>
 
     <FrameLayout
+        android:id="@+id/local"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:onClick="showLocalStations"
         android:stateListAnimator="@drawable/menu_button_state_animator">
 
         <ImageView
@@ -77,10 +77,10 @@
     </FrameLayout>
 
     <FrameLayout
+        android:id="@+id/favorites"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:onClick="showFavoriteStations"
         android:stateListAnimator="@drawable/menu_button_state_animator">
 
         <ImageView
