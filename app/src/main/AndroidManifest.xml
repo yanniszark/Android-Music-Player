@@ -28,7 +28,7 @@
         <activity android:name=".FavoriteRadioActivity" />
         <activity android:name=".LocalRadioActivity" />
         <activity android:name=".GlobalRadioActivity" />
-        <activity android:name=".PlayingNowMusicActivity"></activity>
+        <activity android:name=".PlayingNowMusicActivity"/>
     </application>
 
 </manifest>

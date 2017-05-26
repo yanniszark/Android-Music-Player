@@ -4,11 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.musicplayer.AlbumMusicActivity">
+    android:orientation="vertical"
+    tools:context="com.example.android.musicplayer.SongMusicActivity">
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/music_songs_label"
+        android:textSize="42sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Activity contains all user music songs.
 First time on this screen, if there is no local music directory
@@ -16,6 +24,6 @@ defined from previous use, an explorer will be opened with an
 intent in order to select files/directories. After that, the
 selected directories will be scanned and their metadata will
 be stored locally by the application. Then, every song that
-was discovered will be placed in a listview."/>
+was discovered will be placed in a listview." />
 
 </LinearLayout>

@@ -4,12 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.musicplayer.AlbumMusicActivity">
+    android:orientation="vertical"
+    tools:context="com.example.android.musicplayer.PlayingNowMusicActivity">
 
     <TextView
-        android:id="@+id/textView4"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="42sp"
+        android:gravity="center"
+        android:text="@string/music_playing_now_label"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Activity will show a screen with the song playing at the
 moment, as well as the current playlist." />

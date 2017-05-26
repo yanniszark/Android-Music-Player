@@ -4,12 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.musicplayer.AlbumMusicActivity">
+    android:orientation="vertical"
+    tools:context="com.example.android.musicplayer.TrendingRadioActivity">
 
     <TextView
-        android:id="@+id/textView4"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Trending Radio"
+        android:textSize="42dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Activity contains a list of trending/popular radio stations.
 These stations will be provided with a rest api, like Dirble

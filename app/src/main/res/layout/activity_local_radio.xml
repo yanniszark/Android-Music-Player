@@ -4,12 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.musicplayer.AlbumMusicActivity">
+    android:orientation="vertical"
+    tools:context="com.example.android.musicplayer.LocalRadioActivity">
 
     <TextView
-        android:id="@+id/textView4"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/radio_local_label"
+        android:textSize="42sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Activity contains a list of local radio stations.
         Using LocationManager we will get a single update on

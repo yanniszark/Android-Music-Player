@@ -11,4 +11,14 @@
     <string name="radio_screen_global_button">Global</string>
     <string name="radio_screen_local_button">Local</string>
     <string name="radio_screen_favorites_button">Favorites</string>
+
+    <string name="music_albums_label">Albums</string>
+    <string name="music_artists_label">Artists</string>
+    <string name="music_songs_label">Songs</string>
+    <string name="music_playing_now_label">Playing Now</string>
+
+    <string name="radio_trending_label">Trending Stations</string>
+    <string name="radio_global_label">Global Stations</string>
+    <string name="radio_local_label">Local Stations</string>
+    <string name="radio_favorites_label">Favorite Stations</string>
 </resources>

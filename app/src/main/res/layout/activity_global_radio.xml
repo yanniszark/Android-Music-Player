@@ -4,13 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.musicplayer.AlbumMusicActivity">
+    android:orientation="vertical"
+    tools:context="com.example.android.musicplayer.GlobalRadioActivity">
 
     <TextView
-        android:id="@+id/textView4"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"
+        android:text="@string/radio_global_label"
+        android:textSize="42sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="Activity contains a list of countries. Clicking on one will
 reveal all the radio stations related to that country. The
 information on the radio stations will be retrieved using a

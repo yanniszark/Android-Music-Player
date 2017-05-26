@@ -4,11 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.musicplayer.AlbumMusicActivity">
+    android:orientation="vertical"
+    tools:context="com.example.android.musicplayer.ArtistMusicActivity">
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/music_artists_label"
+        android:textSize="42sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Activity contains user music sorted by artist.
 First time on this screen, if there is no local music directory
@@ -17,5 +25,5 @@ intent in order to select files/directories. After that, the
 selected directories will be scanned and their metadata will
 be stored locally by the application. Using this metadata they
 will be grouped by artist and then each artist will be placed
-as an element of a gridview."/>
+as an element of a gridview." />
 </LinearLayout>
