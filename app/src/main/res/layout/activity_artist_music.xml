@@ -26,4 +26,11 @@ selected directories will be scanned and their metadata will
 be stored locally by the application. Using this metadata they
 will be grouped by artist and then each artist will be placed
 as an element of a gridview." />
+
+    <Button
+        android:id="@+id/button_playing_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/music_playing_now_label" />
 </LinearLayout>

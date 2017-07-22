@@ -27,4 +27,11 @@ be stored locally by the application. Using this metadata they
 will be grouped by album and then each album will be placed
 as an element of a gridview." />
 
+    <Button
+        android:id="@+id/button_playing_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/music_playing_now_label"/>
+
 </LinearLayout>

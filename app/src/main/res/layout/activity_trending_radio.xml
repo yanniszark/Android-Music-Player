@@ -24,4 +24,11 @@ or ShoutCast. These will provide a url for streaming as well
 as metadata for the stations. The metadata will be used to
 populate a listview or a gridview." />
 
+    <Button
+        android:id="@+id/button_playing_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/music_playing_now_label"/>
+
 </LinearLayout>

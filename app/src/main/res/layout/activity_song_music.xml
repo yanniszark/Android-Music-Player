@@ -26,4 +26,11 @@ selected directories will be scanned and their metadata will
 be stored locally by the application. Then, every song that
 was discovered will be placed in a listview." />
 
+    <Button
+        android:id="@+id/button_playing_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/music_playing_now_label"/>
+
 </LinearLayout>

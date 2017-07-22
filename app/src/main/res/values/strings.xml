@@ -20,5 +20,5 @@
     <string name="radio_trending_label">Trending Stations</string>
     <string name="radio_global_label">Global Stations</string>
     <string name="radio_local_label">Local Stations</string>
-    <string name="radio_favorites_label">Favorite Stations</string>
+    <string name="radio_playing_now_label">Playing Now</string>
 </resources>

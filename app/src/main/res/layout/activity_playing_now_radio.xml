@@ -5,23 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.android.musicplayer.FavoriteRadioActivity">
+    tools:context="com.example.android.musicplayer.PlayingNowRadioActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="@string/music_artists_label"
+        android:text="@string/radio_playing_now_label"
         android:textSize="42sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Activity contains a list of user favorite radio stations.
-These stations will be provided with a rest api, like Dirble
-or ShoutCast. If this api doesn't support login, then we will
- use local storage or setup our own server for storing user
- preferences." />
+        android:text="Activity will show a screen with the radio station playing at the
+moment." />
 
 </LinearLayout>

@@ -1,7 +1,6 @@
 package com.example.android.musicplayer;
 
 import android.content.Intent;
-import android.support.v4.app.ShareCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -54,7 +53,7 @@ public class RadioActivity extends AppCompatActivity {
         favoritesRadio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(RadioActivity.this, FavoriteRadioActivity.class);
+                Intent i = new Intent(RadioActivity.this, PlayingNowRadioActivity.class);
                 startActivity(i);
             }
         });

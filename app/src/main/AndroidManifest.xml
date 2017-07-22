@@ -25,7 +25,7 @@
         <activity android:name=".SongMusicActivity" />
         <activity android:name=".ArtistMusicActivity" />
         <activity android:name=".TrendingRadioActivity" />
-        <activity android:name=".FavoriteRadioActivity" />
+        <activity android:name=".PlayingNowRadioActivity" />
         <activity android:name=".LocalRadioActivity" />
         <activity android:name=".GlobalRadioActivity" />
         <activity android:name=".PlayingNowMusicActivity"/>

@@ -24,4 +24,11 @@
 These stations will be provided with a rest api, like Dirble
 or ShoutCast." />
 
+    <Button
+        android:id="@+id/button_playing_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/music_playing_now_label"/>
+
 </LinearLayout>
