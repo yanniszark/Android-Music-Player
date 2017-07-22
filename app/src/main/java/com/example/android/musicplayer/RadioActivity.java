@@ -11,7 +11,7 @@ public class RadioActivity extends AppCompatActivity {
     FrameLayout trendingRadio;
     FrameLayout localRadio;
     FrameLayout globalRadio;
-    FrameLayout favoritesRadio;
+    FrameLayout playingNowRadio;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,8 +49,8 @@ public class RadioActivity extends AppCompatActivity {
         });
 
         /* Setup Favorites Button */
-        favoritesRadio = (FrameLayout) findViewById(R.id.favorites);
-        favoritesRadio.setOnClickListener(new View.OnClickListener() {
+        playingNowRadio = (FrameLayout) findViewById(R.id.playing_now);
+        playingNowRadio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(RadioActivity.this, PlayingNowRadioActivity.class);
