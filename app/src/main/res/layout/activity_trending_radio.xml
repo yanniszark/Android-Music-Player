@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Trending Radio"
-        android:textSize="42dp" />
+        android:textSize="42sp" />
 
     <TextView
         android:layout_width="match_parent"

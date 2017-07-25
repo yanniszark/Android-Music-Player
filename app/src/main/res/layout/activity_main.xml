@@ -22,7 +22,6 @@
             android:src="@drawable/my_music" />
 
         <TextView
-            android:id="@+id/textView"
             style="@style/MusicScreenButtons"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -46,11 +45,33 @@
             android:src="@drawable/radio" />
 
         <TextView
-            android:id="@+id/textView2"
             style="@style/MusicScreenButtons"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/start_screen_radio_button"
+            android:textColor="@android:color/white" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/payment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:stateListAnimator="@drawable/menu_button_state_animator">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/payment" />
+
+        <TextView
+            style="@style/MusicScreenButtons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/payment_label"
             android:textColor="@android:color/white" />
 
     </FrameLayout>

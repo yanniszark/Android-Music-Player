@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicplayer.PlayingNowMusicActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/payment_label"
+        android:textSize="42sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="A well known library we can use to process payments is
+Stripe. First we import the library into our project via the app gradle file. Then we create a card form or use the
+CardInputWidget that Stripe provides. After the user enters his card's details, we retrieve them from the form and
+hit the Stripe API to obtain a token in exchange. We then use that token to form a call to a server of our own that contains
+the private stripe API key (cannot be stored in the app for security reasons) and our server makes the final call to
+the Stripe API." />
+
+    <Button
+        android:id="@+id/music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/start_screen_music_button" />
+
+    <Button
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/start_screen_radio_button" />
+</LinearLayout>

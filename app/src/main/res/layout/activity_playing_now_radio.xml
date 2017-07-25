@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+
     tools:context="com.example.android.musicplayer.PlayingNowRadioActivity">
 
     <TextView
@@ -20,5 +21,28 @@
         android:gravity="center"
         android:text="Activity will show a screen with the radio station playing at the
 moment." />
+
+    <Button
+        android:id="@+id/button_trending"
+        android:text="@string/radio_trending_label"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button_local"
+        android:text="@string/radio_local_label"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button_global"
+        android:text="@string/radio_global_label"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+
+
 
 </LinearLayout>

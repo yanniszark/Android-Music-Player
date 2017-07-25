@@ -21,4 +21,25 @@
         android:text="Activity will show a screen with the song playing at the
 moment, as well as the current playlist." />
 
+    <Button
+        android:id="@+id/button_albums"
+        android:text="@string/music_albums_label"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button_artists"
+        android:text="@string/music_artists_label"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button_songs"
+        android:text="@string/music_songs_label"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>

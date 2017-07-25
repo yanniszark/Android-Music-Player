@@ -9,26 +9,49 @@
         android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/main_menu_label">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MusicActivity" />
-        <activity android:name=".RadioActivity" />
+        <activity
+            android:name=".MusicActivity"
+            android:label="@string/music_menu_label" />
+        <activity
+            android:name=".RadioActivity"
+            android:label="@string/radio_menu_label" />
         <activity
             android:name=".AlbumMusicActivity"
-            android:label="@string/title_activity_album_music"
+            android:label="@string/music_albums_label"
             android:theme="@style/AppTheme" />
-        <activity android:name=".SongMusicActivity" />
-        <activity android:name=".ArtistMusicActivity" />
-        <activity android:name=".TrendingRadioActivity" />
-        <activity android:name=".PlayingNowRadioActivity" />
-        <activity android:name=".LocalRadioActivity" />
-        <activity android:name=".GlobalRadioActivity" />
-        <activity android:name=".PlayingNowMusicActivity"/>
+        <activity
+            android:name=".SongMusicActivity"
+            android:label="@string/music_songs_label" />
+        <activity
+            android:name=".ArtistMusicActivity"
+            android:label="@string/music_artists_label" />
+        <activity
+            android:name=".TrendingRadioActivity"
+            android:label="@string/radio_trending_label" />
+        <activity
+            android:name=".PlayingNowRadioActivity"
+            android:label="@string/radio_playing_now_label" />
+        <activity
+            android:name=".LocalRadioActivity"
+            android:label="@string/radio_local_label" />
+        <activity
+            android:name=".GlobalRadioActivity"
+            android:label="@string/radio_global_label" />
+        <activity
+            android:name=".PlayingNowMusicActivity"
+            android:label="@string/music_playing_now_label" />
+        <activity
+            android:name=".PaymentActivity"
+            android:label="@string/payment_label"></activity>
     </application>
 
 </manifest>

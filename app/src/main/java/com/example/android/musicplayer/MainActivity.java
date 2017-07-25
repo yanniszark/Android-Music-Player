@@ -38,6 +38,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        /* Setup onClickListener for payment button */
+        radio = (FrameLayout) findViewById(R.id.payment);
+        radio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, PaymentActivity.class);
+                startActivity(i);
+            }
+        });
     }
 }
 

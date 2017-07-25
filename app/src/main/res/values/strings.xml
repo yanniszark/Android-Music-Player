@@ -12,6 +12,11 @@
     <string name="radio_screen_local_button">Local</string>
     <string name="radio_screen_favorites_button">Favorites</string>
 
+    <string name="main_menu_label">Main Menu</string>
+    <string name="music_menu_label">Music Menu</string>
+    <string name="radio_menu_label">Radio Menu</string>
+    <string name="payment_label">Payment</string>
+
     <string name="music_albums_label">Albums</string>
     <string name="music_artists_label">Artists</string>
     <string name="music_songs_label">Songs</string>
